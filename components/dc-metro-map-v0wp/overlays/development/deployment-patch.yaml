@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-v0wp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/ex-registry-oqjp-tenant/appstudio/dc-metro-map-v0wp@sha256:5f45a1bce1b1960df4aecd14a32b52bf5f59372b5df5282e666adbdbbae11ee1
+        name: my-nodejs
+        resources: {}
+status: {}
